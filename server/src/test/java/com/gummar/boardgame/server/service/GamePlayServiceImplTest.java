@@ -154,6 +154,31 @@ class GamePlayServiceImplTest {
     }
 
     @Test
+    void processTie() {
+        MoveRequest request = moveSetup(2);
+        // Testing inverse Diagonal Line Win
+        createTieBoard();
+        cache.put(gameBoard.getBoard().getBoardId(), gameBoard);
+        request.setMove(0);
+
+        GamePlayResponse response = service.processMove(request);
+        assertEquals(BOARD_STATE.GAME_TIED, response.getState());
+        assertEquals(response.getWinner(), "");
+    }
+
+    private void createTieBoard() {
+        gameBoard.getBoard().getBoard()[0]= new String[] {"X", "X", "X", "O", "O", "O","X", "X", "X"};
+        gameBoard.getBoard().getBoard()[1]= new String[] { "O", "O", "O","X", "X", "X", "O", "O", "O"};
+        gameBoard.getBoard().getBoard()[2]= new String[] {"X", "X", "X", "X", "O", "X","O", "O", "O"};
+        gameBoard.getBoard().getBoard()[3]= new String[] {"O", "O", "O", "X", "O", "O","X", "X", "X"};
+        gameBoard.getBoard().getBoard()[4]= new String[] {"O", "O", "X", "O", "X", "X","O", "X", "X"};
+        gameBoard.getBoard().getBoard()[5]= new String[] {"_", "O", "X", "X", "O", "X","O", "X", "O"};
+        for (int count =0; count<BoardCacheProvider.ROW_SIZE*BoardCacheProvider.COL_SIZE; count++){
+            gameBoard.getBoard().incrementSteps();
+        }
+    }
+
+    @Test
     void testProcessMoveBoardNotInPlay() {
         Player player1 = new Player("test", "Test_Id");
         player1.setPiece("X");
