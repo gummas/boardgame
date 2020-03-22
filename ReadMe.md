@@ -6,12 +6,12 @@ top into a nine-column, six-row vertically suspended grid. The pieces fall strai
 occupying the next available space within the column. The objective of the game is to be the
 first to form a horizontal, vertical, or diagonal line of five of one's own discs.
 
-[ ][ ][ ][ ][ ][ ][ ][ ][ ]
-[ ][ ][ ][ ][ ][ ][ ][ ][ ]
-[ ][ ][ ][ ][ ][ ][ ][ ][ ]
-[ ][ ][ ][o][ ][o][ ][ ][ ]
-[ ][ ][x][x][ ][x][ ][o][ ]
-[ ][x][o][o][o][x][x][o][x]
+[ ][ ][ ][ ][ ][ ][ ][ ][ ]  
+[ ][ ][ ][ ][ ][ ][ ][ ][ ]  
+[ ][ ][ ][ ][ ][ ][ ][ ][ ]  
+[ ][ ][ ][o][ ][o][ ][ ][ ]  
+[ ][ ][x][x][ ][x][ ][o][ ]  
+[ ][x][o][o][o][x][x][o][x]  
 
 ## When does the player win
 
