@@ -37,7 +37,7 @@ If we have a list of lines with cells numbered we can on each step verify if the
 ### Option 2: 
 
 Given the same grid, we can evaluate on each action using array arithmetics to work out if there are indeed 5 points on a line.
-We start of with a blank board and then evaluate on a all 4 outcomes, horizontal, vertical, posiive and negative slopes.
+We start of with a blank board and then evaluate on a all 4 outcomes, horizontal, vertical, positive and negative slopes.
 Here again, we can see that horizontal connect can start anywhere from column 1 (or zero depends how we count) and only go up until 5 (or 4). Similar subsets can be made for vertical and diagonal lines as well.
 
 The advantage that option 2 might have over 1 is that the subset are derivable from number of pieces which in this case is 5 but can be **r**
