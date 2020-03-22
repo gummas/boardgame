@@ -13,7 +13,7 @@ first to form a horizontal, vertical, or diagonal line of five of one's own disc
 [ ][ ][x][x][ ][x][ ][o][ ]  
 [ ][x][o][o][o][x][x][o][x]  
 
-## When does the player win
+## When does the player win?
 
 ### Option 1
 We are basically trying to find 5 points on a line.
